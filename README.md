@@ -1,5 +1,6 @@
 # Revamping The RML site
-As agreed  y Andres and Vish:
+
+As agreed y Andres and Vish:
 
 Basically, no extra work, improve everything, throw away cruft
 
