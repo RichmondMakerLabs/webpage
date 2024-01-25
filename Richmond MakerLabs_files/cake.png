@@ -1,0 +1,522 @@
+<?php
+  phpinfo();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We are a community makerspace workshop in the middle of Ham, Richmond, Surrey">
+    <meta name="author" content="Richmond MakerLabs TW10 6DS">
+
+    <title>Richmond MakerLabs</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body class="index" id="page-top">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Richmond Makerlabs</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#facilities">Facilities</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="img/rml-logo-no-words.png" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Richmond MakerLabs</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">A community workshop to Tinker, Make, Hack and be Friendly.</p>
+            </div>
+        </header>
+
+        <!-- facilities Section-->
+        <section class="page-section facilities" id="facilities">
+            <div class="container">
+                <!-- facilities Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">facilities</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- facilities Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- facilities Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal1">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>Electronics Bench</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/ElectronicsBench.jpg" alt="Electronics Bench" />
+                        </div>
+                    </div>
+                    <!-- facilities Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal2">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>Laser Cutting</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/LaserCutter.jpg" alt="Laser Cutting" />
+                        </div>
+                    </div>
+                    <!-- facilities Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal3">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>3D Printing</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/3DPrinter.jpg" alt="3d Printing" />
+                        </div>
+                    </div>
+                    <!-- facilities Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal4">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>CNC Router</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/CNCRouter.jpg" alt="CNC Router" />
+                        </div>
+                    </div>
+                    <!-- facilities Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal5">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>Lathe</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/Lathe.jpg" alt="Lathe" />
+                        </div>
+                    </div>
+                    <!-- facilities Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal6">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>Other facilities</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/RML-bigroom.jpg" alt="Other facilities" />
+                        </div>
+                    </div>
+                    <!-- facilities Item 7-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="facilities-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilitiesModal7">
+                            <div class="facilities-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="facilities-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i><H4>More details</H4></div>
+                            </div>
+                            <img class="img-fluid" src="/img/details.png" alt="More details" />
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Richmond MakerLabs is an all-inclusive space for people with an interest in DIY and craft. The space features computer facilities, electronics lab, laser cutting, 3D printing, CNC machinery, metal lathe, kitchen facilities, informal wood shop, and more. <br><br> We also have a hobby interest in Internet of Things (IoT), carpentry, biohacking, amateur radio, brewing, gardening, and sewing/knitting too.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">We are a proud part of the Ham United Group Community Interest Company (HUG). HUG promotes general charitable purposes, activities, events and projects which may be decided from time to time for the benefit of the community of Ham and Petersham and the surrounding area. <br><br>Membership to HUG (and RML) is free, and donations and standing orders kindly accepted.</p></div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section class="page-section body text-black mb-0" id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <hr class="star-primary">
+            <div class="text-center">
+                <br>Please look at 
+                <br>Some information on <a href="https://wiki.richmondmakerlabs.uk/index.php/First_Visit">Your First Visit</a>
+                <br>and more detailed information on <a href="https://wiki.richmondmakerlabs.uk/index.php/How_to_Find_Us">How to Find Us</a>
+                <br>Should you have any further Questions please feel free to get in touch via email or join our mailing list or telegram group <a href="https://wiki.richmondmakerlabs.uk/index.php/Contact">Contact Page</a> 
+
+            </div>
+            
+            
+        </div>
+    </section>
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Little House<br>Ham Close
+                            <br>Ham, Richmond, TW10 7NU<br>United Kingdom<br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.125947960047!2d-0.3192432489836568!3d51.43748082353451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760c7a76624a0d%3A0x976ea7059b2fc1b1!2sRichmond+Maker+Labs!5e0!3m2!1sen!2suk!4v1494801691846" width="220" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="http://fb.com/richmondmakers"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="http://twitter.com/RichmondMakers"><i class="fab fa-fw fa-twitter"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Credits</h4>
+                        <p class="lead mb-0">
+                            Thanks to <a href="https://bitfolk.com/">Bitfolk</a> for site hosting
+                            <br><a href="https://www.wirehive.com/">Wirehive</a> for Cloud Servers
+                            <br><a href="http://www.aaisp.net.uk/">A&ampA</a> for Internet Access
+                            <br><a href="https://hitachi-powertools.co.uk/">Hitachi Power Tools UK</a>
+                            <br><a href="https://m.facebook.com/kimthecraftychameleon">Kim the Crafty Chameleon</a>
+                            <br><a href="http://www.cisco.com/c/en_uk/">Cisco Systems</a>
+                            <br><a href="http://hamunitedgroup.org.uk/">Ham United Group</a> parent CIC
+                            <br><a href="http://www.rss.btck.co.uk/">Richmond Scientific Society</a> who donated £403
+                            <br><a href="https://www.richmond.gov.uk/civic_pride_fund">Civic Pride</a> for funding
+                            <br>  and the Local Community at Large<br>
+                            <br>Website Theme by <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Be excellent to each other.</small></div>
+        </div>
+    </footer>
+
+        <!-- facilities Modals-->
+        <!-- facilities Modal 1-->
+        <div class="facilities-modal modal fade" id="facilitiesModal1" tabindex="-1" aria-labelledby="facilitiesModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">Electronics Bench</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/ElectronicsBench.jpg" alt="..." />
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">We maintain a small electronics lab for building or repairing electronics components. Stocked with soldering and desoldering, measurement, and various hand tools.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facilities Modal 2-->
+        <div class="facilities-modal modal fade" id="facilitiesModal2" tabindex="-1" aria-labelledby="facilitiesModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">Laser Cutter</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/facilities/cake.png" alt="..." />
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">The laser cutter is privately owned but shared with the RML community. Operation and safety training required!	
+                                        <ul class="list-inline item-details">
+                                            <li>More Info:
+                                                <strong><a href="https://wiki.richmondmakerlabs.uk/index.php/Laser_cutter">Laser Cutter details on our Wiki</a>
+                                            </strong>
+                                        </ul>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facilities Modal 3-->
+        <div class="facilities-modal modal fade" id="facilitiesModal3" tabindex="-1" aria-labelledby="facilitiesModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">3D Printing</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/facilities/circus.png" alt="..." />
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">We have both an authentic Deltamaker and a Chinese deltamaker clone in addition to several others being built by members.
+                                        <ul class="list-inline item-details">
+                                            <li>More info:
+                                                <strong><a href="https://wiki.richmondmakerlabs.uk/index.php/Facilities#3D_printing">3D Printer Info on our inventory wiki page</a>
+                                            </strong>
+                                            </li>
+                                        </ul>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facilities Modal 4-->
+        <div class="facilities-modal modal fade" id="facilitiesModal4" tabindex="-1" aria-labelledby="facilitiesModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">CNC Router</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/facilities/game.png" alt="..." />
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">We have an OpenBuilds CNC machine.  It's the converse of a 3D printer - it cuts away at something solid.</p>
+                                    <ul class="list-inline item-details">
+                                        <li>More info:
+                                            <strong><a href="https://wiki.richmondmakerlabs.uk/index.php/Facilities#CNC_Mill/">Info on our wiki here</a>
+                                        </strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facilities Modal 5-->
+        <div class="facilities-modal modal fade" id="facilitiesModal5" tabindex="-1" aria-labelledby="facilitiesModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">Small Metal Lathe</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">We've got a metal lathe. We put it in the kitchen where the hob used to be. Operation and Safety training required!</p>
+                                    <ul class="list-inline item-details">
+                                        <li> 
+                                            <strong><a href="https://wiki.richmondmakerlabs.uk/index.php/Facilities#Lathe">Lathe details on our Wiki</a>
+                                        </strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facilities Modal 6-->
+        <div class="facilities-modal modal fade" id="facilitiesModal6" tabindex="-1" aria-labelledby="facilitiesModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">Other Facilities</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/facilities/submarine.png" alt="..." />
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">Please follow the link to our wiki for a full list of all our facilities<br> Note you'll leave this page</p>
+                                    <ul class="list-inline item-details">
+                                        <li> 
+                                            <strong><a href="https://wiki.richmondmakerlabs.uk/index.php/Facilities">Facilities List on our Wiki</a>
+                                        </strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facilities Modal 7-->
+        <div class="facilities-modal modal fade" id="facilitiesModal7" tabindex="-1" aria-labelledby="facilitiesModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- facilities Modal - Title-->
+                                    <h2 class="facilities-modal-title text-secondary text-uppercase mb-0">More Details</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- facilities Modal - Text-->
+                                    <p class="mb-4">More details about opening dates and your first visit on our wiki <br> Note you'll leave this page</p>
+                                    <ul class="list-inline item-details">
+                                        <li> 
+                                            <strong><a href="https://wiki.richmondmakerlabs.uk/index.php/Main_Page#Next_meeting_dates">Meeting Dates on our wiki</a>
+                                        </strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+    </html>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
