@@ -28,7 +28,7 @@
       format('woff2'),
     url('/assets/fonts/droidserif/droidserif-bolditalic-webfont.woff')
       format('woff');
-  font-weight: bolder;
+  font-weight: bold;
   font-style: italic;
 }
 @font-face {
@@ -80,20 +80,41 @@ body {
   font-size: var(--font-size-base);
   color: var(--main-color-text);
 }
+ul {
+  display: inline;
+  width: fit-content;
+  padding: 0px;
+  list-style-position: inside;
+}
 li::before {
   content: '⬢';
   color: var(--main-color-text);
-  padding-right: 4px;
 }
 li {
   list-style-type: none;
 }
-
-h1.RML {
+header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+header > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 50%;
+}
+header > h1.RML {
   font-family: 'Cabin_Sketch';
   color: var(--main-color-1);
   font-size: var(--spacing-xlarge);
   text-transform: capitalize;
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  right: 20%;
+  margin: auto;
 }
 article.RML {
   background-color: #ffffff;
@@ -106,6 +127,9 @@ article.RML {
     ),
     linear-gradient(to right, var(--background-mesh-color) 1.9px, #ffffff 1.9px);
   background-size: 38px 38px;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
 }
 article.RML h2 {
   font-family: 'Montserrat';
@@ -113,6 +137,7 @@ article.RML h2 {
   font-weight: bolder;
   text-transform: uppercase;
   font-size: var(--spacing-large);
+  text-align: center;
 }
 article.RML h2 span {
   color: var(--main-color-3);
@@ -123,7 +148,9 @@ article.RML h3.subheading {
   font-weight: bolder;
   text-transform: capitalize;
   font-size: var(--spacing-med-lg);
+  text-align: center;
 }
+
 article.RML aside.color2 {
   font-family: 'droidserif';
   color: var(--main-color-2);
@@ -142,4 +169,48 @@ article.RML aside.color5 {
 }
 article.RML p {
   color: var(--main-color-text);
+  text-align: center;
+}
+article.RML aside {
+  display: inline-flex;
+}
+
+article.RML figure {
+  display: inline-flex;
+  align-content: center;
+}
+figure > img {
+  max-width: 300px;
+  background-size: cover;
+}
+li {
+  display: inline-block;
+}
+li:has(figure)::before {
+  content: none;
+  width: 30%;
+}
+footer h3.subheading {
+  font-family: 'lato-black';
+  color: var(--main-color-text);
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: var(--spacing-med-lg);
+  text-align: center;
+}
+footer {
+  font-family: lato;
+  font-size: var(--font-size-base);
+  color: var(--main-color-text);
+  text-align: center;
+}
+.jump {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color-5);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  align-content: space-evenly;
+  font-size: var(--spacing-small);
 }
