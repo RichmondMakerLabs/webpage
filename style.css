@@ -95,11 +95,12 @@ li {
 }
 header {
   position: relative;
-  width: 100%;
+
   margin-bottom: 20px;
 }
 header > a > img {
   width: 5%;
+  min-width: 50px;
   position: fixed;
 }
 header > h1.RML {
@@ -168,15 +169,16 @@ article.RML p {
 article.RML aside {
   display: inline-flex;
 }
-ul.facilities {
+/* ul.facilities {
   display: flex;
   height: fit-content;
   align-items: stretch;
+  justify-content: space-around;
   place-content: start space-between;
-  flex-flow: wrap;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
   align-content: center;
-}
+} */
 
 ul.aside_list > li {
   display: inline-block;
@@ -194,8 +196,8 @@ ul.facilities {
 }
 
 ul.facilities li {
-  flex: 1 1 45%; /* Adjust the width as needed for responsiveness */
-  max-width: 45%;
+  flex: 1 1 210px; /* Adjust the width as needed for responsiveness */
+  max-width: 205px;
   min-width: 200px; /* Adjust the max-width as needed for responsiveness */
   text-align: center;
   margin-bottom: 20px;
@@ -209,9 +211,10 @@ ul.facilities figure figcaption {
   text-align: center;
 }
 
-ul.facilities img {
+ul.facilities figure img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 footer h3.subheading {
@@ -235,7 +238,5 @@ footer {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  align-content: space-evenly;
-  font-size: var(--spacing-small);
   z-index: 3;
 }
