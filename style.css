@@ -17,6 +17,11 @@
   --main-color-5: #c09201;
   --main-color-text: #5a4a42;
   --background-mesh-color: #28aae10a;
+  --background-blank-color: #ffffff;
+  --spacing-max-width: 1000px;
+  --spacing-tablet: 800px;
+  --spacing-phone: 370px;
+  --spacing-gap: 28px;
 }
 
 @font-face {
@@ -80,36 +85,95 @@ body {
   font-size: var(--font-size-base);
   color: var(--main-color-text);
 }
-ul {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.hero {
+  background-image: url('./assets/images/WindowPoppingOut.jpg');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80dvh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+ul.general {
   display: inline;
   width: fit-content;
   padding: 0px;
   list-style-position: inside;
+  list-style: none;
 }
 li::before {
-  content: '⬢';
+  content: '⬢ ';
   color: var(--main-color-text);
 }
-li {
+/* li {
   list-style-type: none;
-}
+  block-size: fit-content;
+} */
 header {
-  position: relative;
-
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--spacing-gap);
+  margin-bottom: var(--spacing-gap);
+  align-items: center;
+  /* border: 3px solid green; */
+  align-items: start;
 }
 header > a > img {
-  width: 5%;
-  min-width: 50px;
-  position: fixed;
+  width: calc(var(--spacing-gap) * 2);
+}
+header > a {
+  flex-grow: 1;
+  min-width: 100 px;
+  /* border: 3px solid red; */
+  width: 10%;
 }
 header > h1.RML {
   font-family: 'Cabin_Sketch';
   color: var(--main-color-1);
-  font-size: var(--spacing-xlarge);
+  font-size: var(--spacing-large);
   text-transform: capitalize;
   text-align: center;
   margin: auto;
+  display: flex;
+  flex-grow: 4;
+  justify-content: center;
+  /* border: 3px solid blue; */
+}
+header > nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  flex-grow: 1;
+  /* border: 3px solid red; */
+  width: 10%;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* list-style: none; */
+}
+.menu {
+  display: none;
+}
+@media (max-width: 500px) {
+  header > nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
 }
 article.RML {
   background-color: #ffffff;
@@ -124,7 +188,21 @@ article.RML {
   background-size: 38px 38px;
   padding: 20px;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#top {
+  border-radius: 10px;
+  width: 40dvh;
+  padding: 10px;
+  margin: 5dvh;
   text-align: center;
+  min-width: 220px;
+}
+article.RML #topLogo {
+  display: block;
+  width: 100px;
 }
 article.RML h2 {
   font-family: 'Montserrat';
@@ -162,27 +240,44 @@ article.RML aside.color5 {
   font-family: 'droidserif';
   color: var(--main-color-5);
 }
+article.RML aside.color1 {
+  font-family: 'droidserif';
+  color: var(--main-color-1);
+}
 article.RML p {
   color: var(--main-color-text);
   text-align: center;
 }
-article.RML aside {
-  display: inline-flex;
-}
-/* ul.facilities {
+article.RML ul.aside-list {
   display: flex;
-  height: fit-content;
-  align-items: stretch;
-  justify-content: space-around;
-  place-content: start space-between;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
-  align-content: center;
+  padding: 0;
+}
+ul.aside-list > li {
+  list-style-type: none;
+  padding-left: 20px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+
+  /*display: inline-block;*/
+}
+/* ul.aside-list {
+  display: block; 
+  width: 100%;
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul.aside-list > li {
+  display: inline-block; 
+  list-style-type: disc; 
+  margin-right: 10px; 
 } */
 
-ul.aside_list > li {
-  display: inline-block;
-}
 li:has(figure)::before {
   content: none;
 }
@@ -230,13 +325,4 @@ footer {
   font-size: var(--font-size-base);
   color: var(--main-color-text);
   text-align: center;
-}
-.jump {
-  width: 20px;
-  height: 20px;
-  background-color: var(--main-color-5);
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 3;
 }
