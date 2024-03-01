@@ -17,6 +17,7 @@
   --main-color-5: #c09201;
   --main-color-text: #5a4a42;
   --background-mesh-color: #28aae10a;
+  --main-color-transparency: rgba(250, 250, 250, 0.9);
   --background-blank-color: #ffffff;
   --spacing-max-width: 1000px;
   --spacing-tablet: 800px;
@@ -91,7 +92,7 @@ main {
   justify-content: center;
 }
 section.hero {
-  background-image: url('./assets/images/WindowPoppingOut.jpg');
+  background-image: url('./assets/images/RML-Panorama.jpg');
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,18 +166,27 @@ header > nav {
 .menu {
   display: none;
 }
-@media (max-width: 500px) {
+@media (width <= 500px) {
   header > nav {
+    display: none;
+  }
+  article > figure.logo {
+    display: none;
+  }
+  ul.aside-list {
     display: none;
   }
   .menu {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: var(--spacing-gap);
+    height: var(--spacing-gap);
+  }
+  article#top {
+    margin: 0;
   }
 }
 article.RML {
-  background-color: #ffffff;
+  background-color: var(--background-blank-color);
   border: 0.2rem solid var(--background-mesh-color);
   /* opacity: 1; */
 
@@ -194,7 +204,7 @@ article.RML {
 }
 #top {
   border-radius: 10px;
-  width: 40dvh;
+  width: 100dvh;
   padding: 10px;
   margin: 5dvh;
   text-align: center;
