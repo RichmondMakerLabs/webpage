@@ -134,7 +134,6 @@ header > a > img {
 header > a {
   flex-grow: 1;
   min-width: 100 px;
-  /* border: 3px solid red; */
   width: 10%;
 }
 header > h1.RML {
@@ -147,14 +146,13 @@ header > h1.RML {
   display: flex;
   flex-grow: 4;
   justify-content: center;
-  /* border: 3px solid blue; */
 }
 header > nav {
   display: flex;
   flex-direction: column;
   justify-content: right;
   flex-grow: 1;
-  /* border: 3px solid red; */
+
   width: 10%;
 }
 .nav-list {
@@ -166,25 +164,7 @@ header > nav {
 .menu {
   display: none;
 }
-@media (width <= 500px) {
-  header > nav {
-    display: none;
-  }
-  article > figure.logo {
-    display: none;
-  }
-  ul.aside-list {
-    display: none;
-  }
-  .menu {
-    display: block;
-    width: var(--spacing-gap);
-    height: var(--spacing-gap);
-  }
-  article#top {
-    margin: 0;
-  }
-}
+
 article.RML {
   background-color: var(--background-blank-color);
   border: 0.2rem solid var(--background-mesh-color);
@@ -335,4 +315,24 @@ footer {
   font-size: var(--font-size-base);
   color: var(--main-color-text);
   text-align: center;
+}
+
+@media (width <= 500px) {
+  header > nav {
+    display: none;
+  }
+  article > figure.logo {
+    display: none;
+  }
+  article.RML > ul.aside-list {
+    display: none;
+  }
+  .menu {
+    display: block;
+    width: var(--spacing-gap);
+    height: var(--spacing-gap);
+  }
+  article#top {
+    margin: 0;
+  }
 }
