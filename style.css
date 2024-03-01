@@ -2,6 +2,7 @@
 
 :root {
   --font-size-base: 16px;
+  --font-size-slightlyLarger: 20px;
   /* Espaciados */
   --spacing-small: 0.5rem; /* 8px */
   --spacing-medium: 1rem; /* 16px */
@@ -334,5 +335,9 @@ footer {
   }
   article#top {
     margin: 0;
+  }
+  * p {
+    font-size: var(--font-size-slightlyLarger);
+    line-height: 1.5;
   }
 }
