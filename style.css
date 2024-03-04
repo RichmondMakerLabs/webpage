@@ -150,6 +150,13 @@ button,
 a {
   color: var(--rtc-font-color-p);
 }
+p,
+h3,
+figcaption,
+button,
+a {
+  text-align: center;
+}
 a:hover,
 details,
 button {
@@ -293,7 +300,8 @@ section.hero {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 80dvh;
+  /* height: 80dvh; */
+  height: fit-content;
   justify-content: start;
   padding: var(--rtc-padding-xl);
 }
@@ -307,12 +315,12 @@ article.RML {
       transparent 1.9px
     ),
     linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
-  background-size: 38px 38px;
-  padding: 20px;
+  background-size: var(--rtc-gap-l) var(--rtc-gap-l);
+  padding: var(--rtc-gap-s);
   margin: 0px;
+  padding-top: var(--rtc-gap-xl);
 }
 article.side-box {
-  padding-top: var(--rtc-gap-l);
   border-radius: var(--rtc-primary-br);
   max-width: var(--rtc-phone-width);
 }
@@ -381,6 +389,9 @@ section.join > article.join {
 li:has(figure)::before {
   content: none;
 }
+/* section.facilities {
+  padding-top: 10svh;
+} */
 ul.facilities {
   display: flex;
   flex-wrap: wrap;
@@ -468,7 +479,7 @@ footer {
   }
 }
 
-/* TODO make all articles or sections have padding  and margin 0 in smaller screens. */
+/* TODO header navigation overlaps over sections find out why and fix it. */
 
 @media (width <= 300px) {
   section#top {
