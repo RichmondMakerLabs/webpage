@@ -12,38 +12,58 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/images/rml-logo-no-words.png" type="image/x-icon" />
 </head>
 <!--Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
 
 <body>
 
-    <!-- <header>
+    <header class="flex-container row" id="header">
+        <div class="flex-container row">
+            <a href="#top"><img src="./assets/images/rml-logo-no-words.png" alt="RML logo" height="35px"></a>
+            <h1>Richmond MakerLabs</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <il><a href="#top">About</a></il>
+                <il><a href="#join">How to join?</a>
+                </il>
+                <il><a href="#facilities">Facilities</a></il>
+                <il><a href="#first-visit">First Visit</a></il>
+            </ul>
 
-        <a href="#top"><img src="./assets/images/rml-logo-no-words.png" alt="RML logo"></a>
-        <h1 class="RML">Come and Visit!</h1> 
-    <nav>
-        <ul class="nav-list">
-            <il><a href="#top">About</a></il>
-            <il><a href="#join">How to join?</a>
-            </il>
-            <il><a href="#facilities">Facilities</a></il>
-        </ul>
+        </nav>
+        <details>
+            <summary class="menu">Menu
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" height="20px" alt="menu"
+                    class="menu">
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /> -->
 
-    </nav>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" height="20px" alt="menu"
-        class="menu">
-        <path
-            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-    </svg>
-    </header> 
--->
+                </svg>
+            </summary>
+            <nav>
+                <ul class="nav-list flex-container row">
+                    <il><a href="#top">About</a></il>
+                    <il><a href="#join">How to join?</a>
+                    </il>
+                    <il><a href="#facilities">Facilities</a></il>
+                    <il><a href="#first-visit">First Visit</a></il>
+                </ul>
+
+            </nav>
+
+        </details>
+    </header>
+
+
     <main>
-        <section class="hero">
-            <article class="RML" id="top">
+        <section class="hero" id="top">
+            <article class="RML side-box flex-container column">
                 <figure class="logo">
                     <img src="./assets/images/rml-logo-no-words.png" alt="RML logo" id="topLogo">
                 </figure>
-                <h2>Richmond <span>Maker</span> labs</h2>
+                <h2>Richmond <span>Maker</span>labs</h2>
                 <h3 class="subheading">A makerspace for everyone, located in the heart of Ham.</h3>
 
                 <ul class="aside-list">
@@ -76,6 +96,19 @@
                         <aside class="color1">Repurpose</aside>
                     </li>
                 </ul>
+
+                <p>We meet Tuesdays and Thursdays nights at 19:30.</p>
+                <p>
+                    Ham Close, Richmond, TW10 7NU.
+                </p>
+
+            </article>
+        </section>
+
+
+        <section class="join" id="join">
+            <article class="RML side-box join">
+                <h2 class="subheading">How to Join?</h2>
                 <p>Richmond MakerLabs is for people with an interest in DIY and craft. We want to hear from you if
                     you
                     are
@@ -87,65 +120,18 @@
                     mechanical
                     or
                     technical? Or can you offer such help? Contact us or just drop in to a meeting!</p>
-                <p>We meet Tuesdays and Thursdays nights at 19:30.</p>
-                <p>
-                    Ham Close, Richmond, TW10 7NU.
-                </p>
-
-            </article>
-        </section>
-        <section>
-            <article class="RML" id="join">
-                <h3 class="subheading">How to Join?</h3>
 
                 <p>Access and membership is free but we accept donations and some materials will need to be paid
                     for.
                     Chat
                     with us about how to do this.</p>
 
-                <h3>Plan your first visit</h3>
-                <p>By far the best thing to do is to come visit. But we also have a great <a
-                        href="https://wiki.richmondmakerlabs.uk/index.php/Main_Page">wiki-page</a> with lots of
-                    extra
-                    information maybe have a look at the stuff we have been doing in our blog. <a
-                        href="https://wiki.richmondmakerlabs.uk/index.php/Blog_2024">in our blog</a>.</p>
-                <p>We appreciate it's sometimes uncomfortable to walk into a room of people and introduce yourself. Some
-                    of these points may help you understand what to expect.</p>
-                <ul class="general">
-                    <li>First off, just come down to see us and have a look around, no forms to fill out before.
-                    </li>
-                    <li>We do ask that anyone under 18 is accompanied by an adult.
-                    </li>
-                    <li>Check we're open: We meet nearly every Tuesday and Thursday from 7.30 at this location - any
-                        announcements will be on the Main Page
-                    </li>
-                    <li>We'll give you a copy of this when you visit but feel free to read through the Member info
-                        notes. (small PDF download)
-                    </li>
-                    <li>Have a look through our Facilities Page to see if there's anything we have that takes your
-                        interest.
-                    </li>
-                    <li>Someone will be able to welcome you and give you a tour - but it's done on a first come, first
-                        served basis so you may have to wait a short period.
-                    </li>
-                    <li>It's worth noting that some tools need training before use. Whether we're able to do that on the
-                        night is largely down to who is available, but if you're aiming to use something specific please
-                        feel free to ask through methods below
-                    </li>
-                    <li>You'll probably get the most out of your first session if you come with something you want to
-                        achieve - but it's no problem if you just want to come and say hello and get a sense of what's
-                        there. Just be aware that, whilst people can often help with advice on how to do things, we
-                        don't currently have projects to suggest.
-                    </li>
-                    <li>Most importantly, people are friendly and please feel free to wander round and ask people what
-                        sorts of things they're working on - they'll usually be keen to show you.</li>
 
-                </ul>
             </article>
         </section>
         <section>
             <article class="RML" id="facilities">
-                <h3 class="subheading">Facilities</h3>
+                <h2 class="subheading">Facilities</h2>
 
                 <ul class="facilities">
                     <li>
@@ -174,7 +160,7 @@
                         </figure>
                     </li>
                     <li>
-                        <figure><img src="./assets/images/3DPrinter.jpg" alt="Some 3D printers">
+                        <figure><img src="./assets/images/3DPrinter-3.jpg" alt="Some 3D printers">
                             <figcaption>Some 3D printers</figcaption>
                         </figure>
                     </li>
@@ -196,7 +182,58 @@
                 </ul>
             </article>
         </section>
+        <section id="first-visit" class="flex-container row">
+            <iframe width="425" height="350"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.31881541013717657%2C51.436702981992944%2C-0.31527489423751837%2C51.438226178052375&amp;layer=cyclemap&amp;marker=51.4374645863719%2C-0.3170451521873474"
+                style="border: 1px solid black"></iframe>
+            <!-- <br /><small><a
+                    href="https://www.openstreetmap.org/#map=19/51.43748/-0.31710&amp;layers=CG">View Larger
+                    Map</a></small> -->
+            <article class="RML first-visit">
+                <h2>Plan your first visit</h2>
+                <p>By far the best thing to do is to come visit. <small><a
+                            href="https://www.openstreetmap.org/?mlat=51.43748&amp;mlon=-0.31710#map=19/51.43748/-0.31710&amp;layers=CG">View
+                            Larger Map</a></small> </p>
+                <p>But we also have a great <a
+                        href="https://wiki.richmondmakerlabs.uk/index.php/Main_Page">wiki-page</a> with lots of
+                    extra
+                    information maybe have a look at the stuff we have been doing <a
+                        href="https://wiki.richmondmakerlabs.uk/index.php/Blog_2024">in our blog</a>.</p>
+                <p>We appreciate it's sometimes uncomfortable to walk into a room of people and introduce yourself. Some
+                    of these points may help you understand what to expect. </p>
+                <ul class="general">
+                    <li>First off, just come down to see us and have a look around, no forms to fill out before.
+                    </li>
+                    <li>We do ask that anyone under 18 is accompanied by an adult.
+                    </li>
+                    <li>Check we're open: it is worth popping a message in our <a
+                            href="https://t.me/+PjIX7S2WyA4cOnZ_">Telegram group</a>
+                    </li>
+                    <!-- <li>We'll give you a copy of this when you visit but feel free to read through the Member info
+                        notes. (small PDF download)
+                    </li> -->
+                    <li>Have a look through our <a href="#facilities">Facilities section</a> to see if there's anything
+                        we have that takes your
+                        interest.
+                    </li>
+                    <li>Someone will be able to welcome you and give you a tour - but it's done on a first come, first
+                        served basis so you may have to wait a short period.
+                    </li>
+                    <li>It's worth noting that some tools need training before use. Whether we're able to do that on the
+                        night is largely down to who is available, but if you're aiming to use something specific please
+                        feel free to ask through methods below
+                    </li>
+                    <li>You'll probably get the most out of your first session if you come with something you want to
+                        achieve - but it's no problem if you just want to come and say hello and get a sense of what's
+                        there. Just be aware that, whilst people can often help with advice on how to do things, we
+                        don't currently have projects to suggest.
+                    </li>
+                    <li>Most importantly, people are friendly and please feel free to wander round and ask people what
+                        sorts of things they're working on - they'll usually be keen to show you.</li>
 
+                </ul>
+            </article>
+        </section>
     </main>
     <footer>
         <details>
@@ -221,12 +258,7 @@
             </p>
         </details>
     </footer>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+
 
     <script src="" async defer></script>
 </body>

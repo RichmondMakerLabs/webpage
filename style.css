@@ -1,31 +1,5 @@
 /* The RML CSS was inspired by Emma Scott's work for RichmondMakerLabs. Emma where every you are, thank you very much! */
 
-:root {
-  --font-size-base: 16px;
-  --font-size-slightlyLarger: 20px;
-  /* Espaciados */
-  --spacing-small: 0.5rem; /* 8px */
-  --spacing-medium: 1rem; /* 16px */
-  --spacing-med-lg: 1.5rem;
-  --spacing-large: 2rem; /* 32px */
-  --spacing-xlarge: 4rem; /*64px*/
-  /*colors*/
-  --main-color: #50763d;
-  --main-color-1: #224099;
-  --main-color-2: #189d98;
-  --main-color-3: #78c486;
-  --main-color-4: #f9d445;
-  --main-color-5: #c09201;
-  --main-color-text: #5a4a42;
-  --background-mesh-color: #28aae10a;
-  --main-color-transparency: rgba(250, 250, 250, 0.9);
-  --background-blank-color: #ffffff;
-  --spacing-max-width: 1000px;
-  --spacing-tablet: 800px;
-  --spacing-phone: 370px;
-  --spacing-gap: 28px;
-}
-
 @font-face {
   font-family: 'droidserif';
   src: local('droidserif'),
@@ -82,28 +56,169 @@
   font-style: normal;
 }
 
+:root {
+  /* root template content: RTC */
+  /* font related stuff */
+  --rtc-font-primary: lato;
+  --rtc-font-primary-strong: lato-black;
+  --rtc-font-aside: droidserif;
+  --rtc-font-heading1: Cabin_Sketch;
+  --rtc-font-heading2: Montserrat;
+  --rtc-font-heading3-subheadings: lato-black;
+  /* --font-size-base: 16px; */
+  /* --font-size-slightlyLarger: 20px; */
+
+  /* spacings, caps and margins */
+
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-section: 100px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+  /* --spacing-small: 0.5rem; 8px */
+  /* --spacing-medium: 1rem; 16px */
+  /* --spacing-med-lg: 1.5rem; */
+  /* --spacing-large: 2rem; 32px */
+  /* --spacing-xlarge: 4rem; 64px */
+  --rtc-max-width: 1000px;
+  --rtc-tablet-width: 800px;
+  --rtc-phone-width: 370px;
+
+  /*Branding colors*/
+  --rtc-color: #50763d;
+  --rtc-color-1: #224099;
+  --rtc-color-2: #189d98;
+  --rtc-color-3: #78c486;
+  --rtc-color-4: #f9d445;
+  --rtc-color-5: #c09201;
+  --rtc-color-text: #5a4a42;
+  /* background colours */
+  --rtc-bg-primary: var(--rtc-color);
+  --rtc-bg-mesh-color: #28aae10a;
+  --rtc-bg-transparency: rgba(250, 250, 250, 0.9);
+  --rtc-bg-blank-color: #ffffff;
+  /* font colours */
+  --rtc-font-color-p: var(--rtc-color-text);
+  /* aside is another word for pull quotes */
+  --rtc-font-color-aside1: var(--rtc-color-1);
+  --rtc-font-color-aside2: var(--rtc-color-2);
+  --rtc-font-color-aside3: var(--rtc-color-3);
+  --rtc-font-color-aside4: var(--rtc-color-4);
+  --rtc-font-color-aside5: var(--rtc-color-5);
+  /* heading colours */
+  --rtc-font-color-h1-impact: var(--rtc-color-1);
+  --rtc-font-color-h2: var(--rtc-color);
+  --rtc-font-color-h2-span: var(--rtc-color-3);
+  --rtc-font-color-subheading: var(--rtc-color-text);
+  /* BORDER RADIUS */
+  --rtc-primary-br: 4px;
+  --rtc-secondary-br: 2px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--rtc-font-primary);
+  color: var(--rtc-font-color-p);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p,
+h3,
+li,
+figcaption,
+button,
+a {
+  color: var(--rtc-font-color-p);
+}
+a:hover,
+details,
+button {
+  cursor: pointer;
+}
+button {
+  background-color: var(--rtc-bg-primary);
+}
+h1 {
+  color: var(--rtc-font-color-h1-impact);
+  font-family: var(--rtc-font-heading1);
+}
+h2 {
+  color: var(--rtc-font-color-h2);
+  font-family: var(--rtc-font-heading2);
+  font-weight: bolder;
+  text-transform: uppercase;
+  /* font-size: var(--font-size-base); */
+  text-align: center;
+}
+h2 > span {
+  color: var(--rtc-font-color-h2-span);
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--rtc-font-heading3-subheadings);
+
+  font-weight: bolder;
+  text-transform: capitalize;
+  /* font-size: var(--rtc-gap-s); */
+  text-align: center;
+}
 body {
-  font-family: lato;
-  font-size: var(--font-size-base);
-  color: var(--main-color-text);
+  background-color: var(--rtc-primary-bg);
+  padding-bottom: 100px;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+html {
+  scroll-behavior: smooth;
 }
-section.hero {
-  background-image: url('./assets/images/RML-Panorama.jpg');
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 80dvh;
+header {
+  /* padding: var(--rtc-padding-m); */
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10svh;
+  background-color: var(--rtc-bg-primary);
+  z-index: 999999999999999999999;
+}
+header a {
+  font-weight: 500;
+}
+
+.flex-container {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--rtc-gap-s);
 }
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+
 ul.general {
   display: inline;
   width: fit-content;
@@ -165,75 +280,65 @@ header > nav {
 .menu {
   display: none;
 }
-
-article.RML {
-  background-color: var(--background-blank-color);
-  border: 0.2rem solid var(--background-mesh-color);
-  /* opacity: 1; */
-
-  background-image: linear-gradient(
-      var(--background-mesh-color) 1.9px,
-      transparent 1.9px
-    ),
-    linear-gradient(to right, var(--background-mesh-color) 1.9px, #ffffff 1.9px);
-  background-size: 38px 38px;
-  padding: 20px;
-  margin: 0px;
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#top {
-  border-radius: 10px;
-  width: 100dvh;
-  padding: 10px;
-  margin: 5dvh;
-  text-align: center;
-  min-width: 220px;
+section.hero {
+  padding-top: var(--rtc-padding-xl);
+  background-image: url('./assets/images/RML-Panorama.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80dvh;
+  justify-content: start;
+  padding: var(--rtc-padding-xl);
 }
+article.RML {
+  background-color: var(--rtc-bg-blank-color);
+  border: 0.2rem solid var(--rtc-bg-mesh-color);
+  /* opacity: 1; */
+
+  background-image: linear-gradient(
+      var(--rtc-bg-mesh-color) 1.9px,
+      transparent 1.9px
+    ),
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
+  background-size: 38px 38px;
+  padding: 20px;
+  margin: 0px;
+}
+article.side-box {
+  border-radius: var(--rtc-primary-br);
+  max-width: var(--rtc-phone-width);
+}
+
 article.RML #topLogo {
   display: block;
-  width: 100px;
-}
-article.RML h2 {
-  font-family: 'Montserrat';
-  color: var(--main-color);
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-size: var(--spacing-large);
-  text-align: center;
-}
-article.RML h2 span {
-  color: var(--main-color-3);
-}
-article.RML h3.subheading {
-  font-family: 'lato-black';
-  color: var(--main-color-text);
-  font-weight: bolder;
-  text-transform: capitalize;
-  font-size: var(--spacing-med-lg);
-  text-align: center;
+  width: 200px;
 }
 
 article.RML aside.color2 {
-  font-family: 'droidserif';
-  color: var(--main-color-2);
+  font-family: var(--rtc-font-aside);
+  color: var(--rtc-font-color-aside2);
 }
 article.RML aside.color3 {
-  font-family: 'droidserif';
-  color: var(--main-color-3);
+  font-family: var(--rtc-font-aside);
+  color: var(--rtc-font-color-aside3);
 }
 article.RML aside.color4 {
-  font-family: 'droidserif';
-  color: var(--main-color-4);
+  font-family: var(--rtc-font-aside);
+  color: var(--rtc-font-color-aside4);
 }
 article.RML aside.color5 {
-  font-family: 'droidserif';
-  color: var(--main-color-5);
+  font-family: var(--rtc-font-aside);
+  color: var(--rtc-font-color-aside5);
 }
 article.RML aside.color1 {
-  font-family: 'droidserif';
-  color: var(--main-color-1);
+  font-family: var(--rtc-font-aside);
+  color: var(--rtc-font-color-aside1);
 }
 article.RML p {
   color: var(--main-color-text);
@@ -256,18 +361,20 @@ ul.aside-list > li {
 
   /*display: inline-block;*/
 }
-/* ul.aside-list {
-  display: block; 
-  width: 100%;
-  padding: 0;
-  list-style-position: inside;
+section.join {
+  padding-top: var(--rtc-padding-xl);
+  background-image: url('./assets/images/3DPrinter-2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80dvh;
+  justify-content: end;
+  padding: var(--rtc-padding-xl);
 }
-
-ul.aside-list > li {
-  display: inline-block; 
-  list-style-type: disc; 
-  margin-right: 10px; 
-} */
+section.join > article.join {
+  float: right;
+}
 
 li:has(figure)::before {
   content: none;
@@ -300,7 +407,17 @@ ul.facilities figure figcaption {
 ul.facilities figure img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: var(--rtc-primary-br);
+}
+section#first-visit > article.first-visit {
+  width: 50%;
+}
+section#first-visit > article.first-visit > p {
+  text-align: left;
+}
+* p a {
+  color: var(--rtc-color);
+  text-decoration-line: underline;
 }
 
 footer h3.subheading {
@@ -317,9 +434,16 @@ footer {
   color: var(--main-color-text);
   text-align: center;
 }
-
+@media (width <=800px) {
+  header h1 {
+    display: none;
+  }
+}
 @media (width <= 500px) {
   header > nav {
+    display: none;
+  }
+  header h1 {
     display: none;
   }
   article > figure.logo {
@@ -333,11 +457,17 @@ footer {
     width: var(--spacing-gap);
     height: var(--spacing-gap);
   }
-  article#top {
-    margin: 0;
-  }
+
   * p {
     font-size: var(--font-size-slightlyLarger);
     line-height: 1.5;
+  }
+}
+/* TODO add something so that menu does not overflow when clickes. */
+/* TODO make all articles or sections have padding  and margin 0 in smaller screens. */
+
+@media (width <= 300px) {
+  section#top {
+    padding: 0;
   }
 }
