@@ -159,7 +159,8 @@ button {
   background-color: var(--rtc-bg-primary);
 }
 h1 {
-  color: var(--rtc-font-color-h1-impact);
+  /* color: var(--rtc-font-color-h1-impact); */
+  color: var(--rtc-bg-blank-color);
   font-family: var(--rtc-font-heading1);
 }
 h2 {
@@ -198,6 +199,7 @@ header {
   left: 0;
   width: 100%;
   height: 10svh;
+  height: fit-content;
   background-color: var(--rtc-bg-primary);
   z-index: 99;
   display: flex;
@@ -210,6 +212,7 @@ header {
 }
 header a {
   font-weight: 500;
+  color: var(--rtc-bg-blank-color);
 }
 
 .flex-container {
@@ -247,7 +250,7 @@ header > a > img {
 }
 header > a {
   flex-grow: 1;
-  min-width: 100 px;
+  /* min-width: 100 px; */
   width: 10%;
 }
 header > h1.RML {
@@ -409,7 +412,8 @@ ul.facilities figure img {
   border-radius: var(--rtc-primary-br);
 }
 section#first-visit > article.first-visit {
-  width: 50%;
+  min-width: 200px;
+  max-width: 800px;
 }
 section#first-visit > article.first-visit > p {
   text-align: left;
@@ -454,8 +458,8 @@ footer {
   }
   .menu {
     display: block;
-    width: var(--spacing-gap);
-    height: var(--spacing-gap);
+    font-weight: 500;
+    color: var(--rtc-bg-blank-color);
   }
 
   * p {
@@ -463,7 +467,7 @@ footer {
     line-height: 1.5;
   }
 }
-/* TODO add something so that menu does not overflow when clickes. */
+
 /* TODO make all articles or sections have padding  and margin 0 in smaller screens. */
 
 @media (width <= 300px) {
