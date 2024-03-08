@@ -198,6 +198,8 @@ body {
 }
 html {
   scroll-behavior: smooth;
+
+  scroll-padding-top: 10svh; /* height of sticky header */
 }
 header {
   /* padding: var(--rtc-padding-m); */
@@ -351,7 +353,7 @@ article.RML aside.color1 {
   color: var(--rtc-font-color-aside1);
 }
 article.RML p {
-  color: var(--main-color-text);
+  color: var(--rtc-color-text);
   text-align: center;
 }
 article.RML ul.aside-list {
@@ -429,12 +431,16 @@ section#first-visit > article.first-visit {
 section#first-visit > article.first-visit > p {
   text-align: left;
 }
-* p a,
+* p figcaption a,
 .inText {
   color: var(--rtc-color);
   text-decoration-line: underline;
 }
 
+* figcaption a {
+  color: var(--rtc-color);
+  text-decoration-line: underline;
+}
 footer h3.subheading {
   font-family: 'lato-black';
   color: var(--main-color-text);
