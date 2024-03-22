@@ -177,6 +177,7 @@ h2 {
   text-transform: uppercase;
   /* font-size: var(--font-size-base); */
   text-align: center;
+  padding-bottom: var(--rtc-gap-m);
 }
 h2 > span {
   color: var(--rtc-font-color-h2-span);
@@ -222,6 +223,7 @@ header {
 header a {
   font-weight: 500;
   color: var(--rtc-bg-blank-color);
+  font-family: var(--rtc-font-heading1);
 }
 
 .flex-container {
@@ -245,6 +247,9 @@ ul.general {
   list-style-position: inside;
   list-style: none;
 }
+ul.general > li + li {
+  margin-top: 10px;
+}
 li::before {
   content: '⬢ ';
   color: var(--main-color-text);
@@ -263,7 +268,8 @@ header > a {
   width: 10%;
 }
 header > h1.RML {
-  font-family: 'Cabin_Sketch';
+  /* font-family: var(--rtc-font-heading1);
+  font-family: 'Cabin_Sketch'; */
   color: var(--main-color-1);
   font-size: var(--spacing-large);
   text-transform: capitalize;
@@ -285,6 +291,7 @@ header > nav {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+
   /* list-style: none; */
 }
 .menu {
@@ -318,10 +325,60 @@ article.RML {
     ),
     linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
   background-size: var(--rtc-gap-l) var(--rtc-gap-l);
+  background-repeat: repeat, repeat;
+  background-position: center, center;
   padding: var(--rtc-gap-s);
   margin: 0px;
   padding-top: var(--rtc-gap-xl);
 }
+article.RML-blueSplatter {
+  background-color: var(--rtc-bg-blank-color);
+  border: 0.2rem solid var(--rtc-bg-mesh-color);
+  /* opacity: 1; */
+
+  background-image: url(./assets/images/pink-splatter.png),
+    linear-gradient(var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px),
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
+
+  background-size: var(--rtc-gap-l) var(--rtc-gap-l) var(--rtc-gap-l);
+  background-repeat: no-repeat, repeat, repeat;
+  background-position: top, center, center;
+  padding: var(--rtc-gap-s);
+  margin: 0px;
+  padding-top: var(--rtc-gap-xl);
+}
+/* article.RML-tools {
+  background-color: var(--rtc-bg-blank-color);
+  border: 0.2rem solid var(--rtc-bg-mesh-color);
+
+  background-image: linear-gradient(
+      var(--rtc-bg-mesh-color) 1.9px,
+      transparent 1.9px
+    ),
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
+  background-size: var(--rtc-gap-l) var(--rtc-gap-l) var(--rtc-gap-l);
+  background-repeat: repeat, repeat;
+  background-position: center, center;
+  padding: var(--rtc-gap-s);
+  margin: 0px;
+  padding-top: var(--rtc-gap-xl);
+} */
+/* article.RML-tools {
+  background-color: var(--rtc-bg-blank-color);
+  border: 0.2rem solid var(--rtc-bg-mesh-color);
+ 
+
+  background-image: url(./assets/images/scissors.png),
+    linear-gradient(var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px),
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
+
+  background-size: contain var(--rtc-gap-l) var(--rtc-gap-l);
+  background-repeat: no-repeat, repeat, repeat;
+  background-position: top right, center, center;
+  padding: var(--rtc-gap-s);
+  margin: 0px;
+  padding-top: var(--rtc-gap-xl);
+} */
 article.side-box {
   border-radius: var(--rtc-primary-br);
   max-width: var(--rtc-phone-width);
@@ -424,9 +481,14 @@ ul.facilities figure img {
   height: auto;
   border-radius: var(--rtc-primary-br);
 }
+section#first-visit {
+  align-items: stretch;
+}
 section#first-visit > article.first-visit {
   min-width: 200px;
   max-width: 800px;
+  flex-direction: column;
+  justify-content: center;
 }
 section#first-visit > article.first-visit > p {
   text-align: left;
@@ -484,8 +546,6 @@ footer {
     line-height: 1.5;
   }
 }
-
-/* TODO header navigation overlaps over sections find out why and fix it. */
 
 @media (width <= 300px) {
   section#top {
