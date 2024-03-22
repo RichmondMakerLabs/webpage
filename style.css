@@ -336,13 +336,24 @@ article.RML-blueSplatter {
   border: 0.2rem solid var(--rtc-bg-mesh-color);
   /* opacity: 1; */
 
-  background-image: url(./assets/images/pink-splatter.png),
+  /* background-image: url(./assets/images/pink-splatter.png),
     linear-gradient(var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px),
     linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
 
   background-size: var(--rtc-gap-l) var(--rtc-gap-l) var(--rtc-gap-l);
   background-repeat: no-repeat, repeat, repeat;
-  background-position: top, center, center;
+  background-position: top, center, center; */
+
+  background-image: linear-gradient(
+      var(--rtc-bg-mesh-color) 1.9px,
+      transparent 1.9px
+    ),
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
+
+  background-size: var(--rtc-gap-l) var(--rtc-gap-l);
+  background-repeat: repeat, repeat;
+  background-position: center, center;
+
   padding: var(--rtc-gap-s);
   margin: 0px;
   padding-top: var(--rtc-gap-xl);
@@ -458,6 +469,7 @@ ul.facilities {
   gap: 20px;
   padding: 0;
   list-style: none;
+  max-width: 1200px;
 }
 
 ul.facilities li {
@@ -516,6 +528,13 @@ footer {
   font-size: var(--font-size-base);
   color: var(--main-color-text);
   text-align: center;
+}
+@media (width >800px) {
+  ul.facilities li {
+    /* flex: 2 1 350px; */
+    flex: 300px;
+    max-width: 300px;
+  }
 }
 @media (width <=800px) {
   header h1 {
