@@ -248,7 +248,7 @@ ul.general {
   list-style: none;
 }
 ul.general > li + li {
-  margin-top: 10px;
+  margin-top: var(--rtc-gap-s);
 }
 li::before {
   content: '⬢ ';
@@ -374,22 +374,44 @@ article.RML-blueSplatter {
   margin: 0px;
   padding-top: var(--rtc-gap-xl);
 } */
-/* article.RML-tools {
+.multi-bg-example {
   background-color: var(--rtc-bg-blank-color);
   border: 0.2rem solid var(--rtc-bg-mesh-color);
- 
-
-  background-image: url(./assets/images/scissors.png),
-    linear-gradient(var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px),
-    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
-
-  background-size: contain var(--rtc-gap-l) var(--rtc-gap-l);
-  background-repeat: no-repeat, repeat, repeat;
-  background-position: top right, center, center;
+  background-image: url(./assets/images/laptop.png),
+    url(./assets/images/gears.png), url(./assets/images/drill.png),
+    url(./assets/images/ruler.png), url(./assets/images/bulb.png),
+    url(./assets/images/scissors.png), url(./assets/images/chemical.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: bottom left, top right, bottom, top left, bottom right,
+    left, right;
   padding: var(--rtc-gap-s);
   margin: 0px;
   padding-top: var(--rtc-gap-xl);
-} */
+}
+
+article.RML-LinedPaper {
+  background-color: var(--rtc-bg-blank-color);
+  border: 0.2rem solid var(--rtc-bg-mesh-color);
+
+  background-color: #fff;
+
+  background-image: linear-gradient(
+      90deg,
+      transparent 30px,
+      #abced4 30px,
+      #abced4 32px,
+      transparent 32px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  /* background-repeat: no-repeat, no-repeat, repeat; */
+
+  padding: var(--rtc-gap-s);
+  padding-left: var(--rtc-gap-l);
+  margin: 0px;
+  padding-top: var(--rtc-gap-xl);
+}
 article.side-box {
   border-radius: var(--rtc-primary-br);
   max-width: var(--rtc-phone-width);
@@ -495,6 +517,9 @@ ul.facilities figure img {
 }
 section#first-visit {
   align-items: stretch;
+  /* justify-content: start; */
+  justify-content: center;
+  /* TODO why in laptop screen this moves up? */
 }
 section#first-visit > article.first-visit {
   min-width: 200px;
