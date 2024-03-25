@@ -332,49 +332,6 @@ article.RML {
   padding-top: var(--rtc-gap-xl);
 }
 
-article.RML-blueSplatter {
-  background-color: var(--rtc-bg-blank-color);
-  border: 0.2rem solid var(--rtc-bg-mesh-color);
-  /* opacity: 1; */
-
-  /* background-image: url(./assets/images/pink-splatter.png),
-    linear-gradient(var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px),
-    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
-
-  background-size: var(--rtc-gap-l) var(--rtc-gap-l) var(--rtc-gap-l);
-  background-repeat: no-repeat, repeat, repeat;
-  background-position: top, center, center; */
-
-  background-image: linear-gradient(
-      var(--rtc-bg-mesh-color) 1.9px,
-      transparent 1.9px
-    ),
-    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
-
-  background-size: var(--rtc-gap-l) var(--rtc-gap-l);
-  background-repeat: repeat, repeat;
-  background-position: center, center;
-
-  padding: var(--rtc-gap-s);
-  margin: 0px;
-  padding-top: var(--rtc-gap-xl);
-}
-/* article.RML-tools {
-  background-color: var(--rtc-bg-blank-color);
-  border: 0.2rem solid var(--rtc-bg-mesh-color);
-
-  background-image: linear-gradient(
-      var(--rtc-bg-mesh-color) 1.9px,
-      transparent 1.9px
-    ),
-    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
-  background-size: var(--rtc-gap-l) var(--rtc-gap-l) var(--rtc-gap-l);
-  background-repeat: repeat, repeat;
-  background-position: center, center;
-  padding: var(--rtc-gap-s);
-  margin: 0px;
-  padding-top: var(--rtc-gap-xl);
-} */
 .multi-bg-example {
   background-image: url(./assets/images/BlueSplatter.png),
     url(./assets/images/pink-splatter.png),
@@ -552,6 +509,15 @@ section#first-visit {
   justify-content: center;
   /* TODO why in laptop screen this moves up? */
 }
+section#first-visit > a > figure {
+}
+section#first-visit > a > figure > img {
+  max-width: 700px;
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+  display: block;
+}
 section#first-visit > article.first-visit {
   min-width: 200px;
   max-width: 800px;
@@ -595,6 +561,16 @@ footer {
 @media (width <=800px) {
   header h1 {
     display: none;
+  }
+  .multi-bg {
+    /* background-color: var(--rtc-bg-blank-color);  */
+    border: 0.2rem solid var(--rtc-bg-mesh-color);
+    background-image: url(./assets/images/chemical.png),
+      url(./assets/images/gears.png), url(./assets/images/drill.png),
+      url(./assets/images/ruler.png), url(./assets/images/bulb.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
+    background-position: bottom left, top right, bottom, top left, bottom right;
   }
 }
 @media (width <= 500px) {
