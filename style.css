@@ -107,7 +107,7 @@
   --rtc-color-text: #5a4a42;
   /* background colours */
   --rtc-bg-primary: var(--rtc-color);
-  --rtc-bg-mesh-color: #28aae10a;
+  --rtc-bg-mesh-color: #28a9e11f;
   --rtc-bg-transparency: rgba(250, 250, 250, 0.9);
   --rtc-bg-blank-color: #ffffff;
   /* font colours */
@@ -319,18 +319,19 @@ article.RML {
   border: 0.2rem solid var(--rtc-bg-mesh-color);
   /* opacity: 1; */
 
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       var(--rtc-bg-mesh-color) 1.9px,
       transparent 1.9px
     ),
-    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, #ffffff 1.9px);
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px);
   background-size: var(--rtc-gap-l) var(--rtc-gap-l);
   background-repeat: repeat, repeat;
-  background-position: center, center;
+  background-position: center, center; */
   padding: var(--rtc-gap-s);
   margin: 0px;
   padding-top: var(--rtc-gap-xl);
 }
+
 article.RML-blueSplatter {
   background-color: var(--rtc-bg-blank-color);
   border: 0.2rem solid var(--rtc-bg-mesh-color);
@@ -375,23 +376,56 @@ article.RML-blueSplatter {
   padding-top: var(--rtc-gap-xl);
 } */
 .multi-bg-example {
-  background-color: var(--rtc-bg-blank-color);
+  background-image: url(./assets/images/BlueSplatter.png),
+    url(./assets/images/pink-splatter.png),
+    linear-gradient(to right, rgb(30 75 115 / 100%), rgb(255 255 255 / 0%));
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: top left, top right, center;
+  /* background-size:  */
+  /* 100% 100%  1.2em; */
+}
+.Rtimes5 {
+  min-height: 50px;
   border: 0.2rem solid var(--rtc-bg-mesh-color);
-  background-image: url(./assets/images/laptop.png),
+  background-image: url(./assets/images/BlueSplatter.png),
+    url(./assets/images/pink-splatter.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top right;
+  /* background-size:  */
+  /* 100% 100%  1.2em; */
+}
+
+.multi-bg {
+  /* background-color: var(--rtc-bg-blank-color);  */
+  border: 0.2rem solid var(--rtc-bg-mesh-color);
+  background-image: url(./assets/images/chemical.png),
     url(./assets/images/gears.png), url(./assets/images/drill.png),
     url(./assets/images/ruler.png), url(./assets/images/bulb.png),
-    url(./assets/images/scissors.png), url(./assets/images/chemical.png);
+    url(./assets/images/scissors.png), url(./assets/images/laptop.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
     no-repeat;
   background-position: bottom left, top right, bottom, top left, bottom right,
     left, right;
+}
+article {
   padding: var(--rtc-gap-s);
   margin: 0px;
   padding-top: var(--rtc-gap-xl);
 }
 
+.cuadricula {
+  background-image: linear-gradient(
+      var(--rtc-bg-mesh-color) 1.9px,
+      transparent 1.9px
+    ),
+    linear-gradient(to right, var(--rtc-bg-mesh-color) 1.9px, transparent 1.9px);
+  background-size: var(--rtc-gap-l) var(--rtc-gap-l);
+  background-repeat: repeat, repeat;
+  background-position: center, center;
+}
+
 article.RML-LinedPaper {
-  background-color: var(--rtc-bg-blank-color);
+  /* background-color: var(--rtc-bg-blank-color); */
   border: 0.2rem solid var(--rtc-bg-mesh-color);
 
   background-color: #fff;
@@ -407,10 +441,7 @@ article.RML-LinedPaper {
   background-size: 100% 1.2em;
   /* background-repeat: no-repeat, no-repeat, repeat; */
 
-  padding: var(--rtc-gap-s);
   padding-left: var(--rtc-gap-l);
-  margin: 0px;
-  padding-top: var(--rtc-gap-xl);
 }
 article.side-box {
   border-radius: var(--rtc-primary-br);
@@ -422,23 +453,23 @@ article.RML #topLogo {
   width: 200px;
 }
 
-article.RML aside.color2 {
+aside.color2 {
   font-family: var(--rtc-font-aside);
   color: var(--rtc-font-color-aside2);
 }
-article.RML aside.color3 {
+aside.color3 {
   font-family: var(--rtc-font-aside);
   color: var(--rtc-font-color-aside3);
 }
-article.RML aside.color4 {
+aside.color4 {
   font-family: var(--rtc-font-aside);
   color: var(--rtc-font-color-aside4);
 }
-article.RML aside.color5 {
+aside.color5 {
   font-family: var(--rtc-font-aside);
   color: var(--rtc-font-color-aside5);
 }
-article.RML aside.color1 {
+aside.color1 {
   font-family: var(--rtc-font-aside);
   color: var(--rtc-font-color-aside1);
 }
@@ -446,7 +477,7 @@ article.RML p {
   color: var(--rtc-color-text);
   text-align: center;
 }
-article.RML ul.aside-list {
+ul.aside-list {
   display: flex;
   justify-content: center;
   width: 100%;
