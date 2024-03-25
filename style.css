@@ -335,9 +335,10 @@ article.RML {
   background-image: url(./assets/images/BlueSplatter.png),
     url(./assets/images/pink-splatter.png),
     url(./assets/images/yellow-splatter.png),
-    url(./assets/images/green-splatter.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top left, top right, bottom right, bottom left;
+    url(./assets/images/green-splatter.png),
+    url(./assets/images/OrangeSplatter.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, bottom right, bottom left, left;
 }
 .multi-bg-example {
   background-image: url(./assets/images/BlueSplatter.png),
