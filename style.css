@@ -159,9 +159,12 @@ a {
 }
 a:hover,
 details,
-button {
+button,
+summary.menu {
   cursor: pointer;
+  font-size: larger;
 }
+
 button {
   background-color: var(--rtc-bg-primary);
 }
@@ -220,7 +223,8 @@ header {
   align-items: center;
   align-items: start;
 }
-header a {
+header a,
+summary {
   font-weight: 500;
   color: var(--rtc-bg-blank-color);
   font-family: var(--rtc-font-heading1);
@@ -247,17 +251,17 @@ ul.general {
   list-style-position: inside;
   list-style: none;
 }
-ul.general > li + li {
+article ul.general > li + li {
   margin-top: var(--rtc-gap-s);
 }
-li::before {
+article li::before {
   content: '⬢ ';
   color: var(--main-color-text);
 }
-/* li {
+nav > ul li {
   list-style-type: none;
   block-size: fit-content;
-} */
+}
 
 header > a > img {
   width: calc(var(--spacing-gap) * 2);
@@ -294,7 +298,7 @@ header > nav {
 
   /* list-style: none; */
 }
-.menu {
+header details {
   display: none;
 }
 main {
@@ -454,8 +458,6 @@ ul.aside-list > li {
   width: 100px;
   display: flex;
   flex-direction: row;
-
-  /*display: inline-block;*/
 }
 section.join {
   padding-top: var(--rtc-padding-xl);
@@ -506,8 +508,12 @@ ul.facilities figure figcaption {
 
 ul.facilities figure img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   border-radius: var(--rtc-primary-br);
+  /* float: left; */
+  width: 205px;
+  height: 94px;
+  object-fit: cover;
 }
 section#first-visit {
   align-items: stretch;
@@ -515,8 +521,7 @@ section#first-visit {
   justify-content: center;
   /* TODO why in laptop screen this moves up? */
 }
-section#first-visit > a > figure {
-}
+
 section#first-visit > a > figure > img {
   max-width: 700px;
   width: 100vw;
@@ -592,7 +597,7 @@ footer {
   article.RML > ul.aside-list {
     display: none;
   }
-  .menu {
+  header details {
     display: block;
     font-weight: 500;
     color: var(--rtc-bg-blank-color);
